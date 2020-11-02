@@ -1,1 +1,1 @@
-   
+   [![Build status](https://ci.appveyor.com/api/projects/status/idx3hgqgyd63habr?svg=true)](https://ci.appveyor.com/project/EleonoraPopushoi/order-a-card-ug2lg)
