@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class OrderACardTest {
     @BeforeEach
     void setUp () {
-        open("http://localhost:9999");
+        open("http://localhost:7777");
     }
 
     @Test
@@ -58,7 +58,7 @@ public class OrderACardTest {
         $("[data-test-id=name] input").setValue("Тамара Петровна");
         $("[data-test-id=phone] input").setValue("+79267406485");
         $(By.className("button")).click();
-        $(".checkbox__text").shouldHave(cssValue("color", "rgba(255, 92, 92, 1)"));
+        $(".checkbox_size_m.input_invalid .checkbox__text").shouldHave(cssValue("color", "rgba(255, 92, 92, 1)"));
 
     }
 
