@@ -58,7 +58,7 @@ public class OrderACardTest {
         $("[data-test-id=name] input").setValue("Тамара Петровна");
         $("[data-test-id=phone] input").setValue("+79267406485");
         $(By.className("button")).click();
-        $(".checkbox_size_m.input_invalid .checkbox__text").shouldHave(cssValue("color", "rgba(255, 92, 92, 1)"));
+        $(".checkbox_size_m.input_invalid .checkbox__text").shouldHave(exactText("Я соглашаюсь с условиями обработки и использования моих персональных данных и разрешаю сделать запрос в бюро кредитных историй"));
 
     }
 
