@@ -14,3 +14,7 @@ install:
 
 build_script:
   - ./gradlew test --info "-Dselenide.headless=true"
+  - ./gradlew build -Dorg.gradle.warning.mode=all
+
+on_finish:
+  - ps: Stop-Process -Id $App.Id
