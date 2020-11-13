@@ -8,7 +8,9 @@ image: Ubuntu
   build: off
 
   install:
+    - chmod +x gradlew
     - ps: java -jar ./artifacts/app-order.jar -port=7777 -P:profile=test &
+
 
   build_script:
     - ps: ./gradlew test --info "-Dselenide.headless=true"
